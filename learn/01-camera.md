@@ -255,7 +255,7 @@ For our camera system we only care about the yaw and pitch values so we won't di
 
 ![](/images/01/camera-triangle.png){:.img-fluid .center-block}{:width="250px" height="250px"}
 
-If we define the hypotenuse to be of length 1 we know from trigonometry (soh cah toa) that the adjacant side's length is $$\cos \ \color{red}x/\color{purple}h = \cos \ \color{red}x/\color{purple}1 = \cos\ \color{red}x$$ and that the opposing side's length is $$\sin \ \color{green}y/\color{purple}h = \sin \ \color{green}y/\color{purple}1 = \sin\ \color{green}y$$. This gives us some general formulas for retrieving the length in both the x and y directions, depending on the given angle. Let's use this to calculate the components of the direction vector:
+If we define the hypotenuse to be of length 1 we know from trigonometry (soh cah toa) that the adjacant side's length is $$\color{red}x\color{black} = \color{purple}h\color{black} \times \cos(\theta) = \color{purple}1\color{black} \times \cos(\theta) = \cos(\theta)$$ and that the opposing side's length is $$\color{green}y\color{black} = \color{purple}h\color{black} \times \sin(\theta) = \color{purple}1\color{black} \times \sin(\theta) = \sin(\theta)$$. This gives us some general formulas for retrieving the length in both the x and y directions, depending on the given angle. Let's use this to calculate the components of the direction vector:
 
 ![](/images/01/camera-pitch.png){:.img-fluid .center-block}{:width="231px" height="237px"}
 
